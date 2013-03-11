@@ -1,4 +1,7 @@
 Rails3BootstrapDeviseCancan::Application.routes.draw do
+  resources :albums
+
+
   authenticated :user do
     root :to => 'home#index'
   end
