@@ -9,6 +9,9 @@
 %p
   %b Title:
   = @image.title
+%p
+  %b Resourse
+  = image_tag(@image.image_src.url) if @image.image_src?
 
 = link_to 'Edit', edit_image_path(@image)
 \|

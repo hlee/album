@@ -57,6 +57,7 @@ class ImagesController < ApplicationController
   # PUT /images/1.json
   def update
     @image = Image.find(params[:id])
+    binding.pry
 
     respond_to do |format|
       if @image.update_attributes(params[:image])
