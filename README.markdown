@@ -1,6 +1,11 @@
 # Main function
 
-with carriewave as uploader
+*album has many images
+*User can upload images to album
+*User can create album
+*Friend can check album
+*with carriewave as uploader
+
 ```ruby
 u = User.new
 u.avatar = params[:file]
