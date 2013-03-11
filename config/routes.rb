@@ -1,4 +1,7 @@
 Rails3BootstrapDeviseCancan::Application.routes.draw do
+  resources :images
+
+
   resources :albums
 
 
