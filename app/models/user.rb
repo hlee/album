@@ -19,4 +19,12 @@ class User < ActiveRecord::Base
   def allfriends
     friends + ofriends
   end
+
+  def friends_albums
+    allfriends.map(&:albums).flatten
+  end
+
+  def seeable_albums
+    albums + friends_albums
+  end
 end
